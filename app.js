@@ -2,6 +2,7 @@ const hello = document.getElementById('hello');
 const helloOutput = document.getElementById('helloOutput');
 const name1 = document.getElementById('name1');
 const name2 = document.getElementById('name2');
+const insert = document.getElementById('insert');
 const name1Output = document.getElementById('name1Output');
 const name2Output = document.getElementById('name2Output');
 const submitButton = document.getElementById('submitButton');
@@ -10,11 +11,14 @@ const firstLevel = document.getElementById('firstLevel');
 const researching = document.getElementById('researching');
 const continueB = document.getElementById('continue');
 const video = document.getElementById('video');
+const videoIMG = document.getElementById('videoIMG');
 const roboticsVideo = document.getElementById('roboticsVideo');
 const article = document.getElementById('article');
+const articleIMG = document.getElementById('articleIMG');
 const roboticsArticle = document.getElementById('roboticsArticle');
 const questions = document.getElementById('questions');
 const instructions = document.getElementById('instructions');
+const quFormBut = document.getElementById('quFormBut');
 
 submitButton.addEventListener('click' , function()
 {
@@ -23,7 +27,11 @@ submitButton.addEventListener('click' , function()
         name1Output.innerText = name1.value;
         name2Output.innerText = name2.value;
         helloOutput.hidden = false;
-        startButton.hidden = false;
+        startButton.style.visibility = 'visible';
+        name1.hidden = true;
+        name2.hidden = true;
+        submitButton.style.visibility = 'hidden';
+        insert.hidden = true;
     }
     else
     {
@@ -45,9 +53,8 @@ continueB.addEventListener('click' , function()
     firstLevel.hidden = true;
 } , false);
 
-let qArr = ['q1','q2','q3','q4','q5','q6','q7','q8','q9','q10'];
+let qArr = ['What is your favorite movie?', 'What is your favorite dish?', 'What is your favorite TV series?', 'What profession do you hate most about school?', 'Who is your favorite superhero?', 'What would you take to a desert island?', 'What is the food you hate the most?', 'What do you like to do most in your free time?', 'What do you value most in people?', 'If you were an animal, what animal would you choose to be and why?', 'If you could get any power possible, what power would you want?', 'If you were allowed to be born again in the world, in what country would you like to be born? Why?', 'Which hero from a TV show do you like best? Why ?', 'What is your favorite game to play during the break? What do you like most about this game?', 'What are your hobbies?', 'Who is the person you trust the most?', 'What is your favourite subject?', 'What do you like most about yourself?', 'Do you have a pet? If so, how did you name her?', 'Do you like animals?', 'What is your favorite place?', 'What is your favorite movie genre?', 'What is your dream?', 'What is your favorite song?', 'In what month were you born?', 'What is your sign?', 'What would you like to be in the future?', 'What is your favorite sport?', 'How many brothers do you have?', 'What do you like to learn most?', 'Where would you like to go and have not yet arrived?', 'What is the most precious thing to you?', 'What thing can you not live without it?', 'What is your favorite dessert?', 'What is your favorite season of the year?', 'What is the first thing you do when you get up in the morning?', 'Would you change anything yourself? If so, what?', 'What do you think is the most unnecessary thing in this world?', 'What do you like most about this world?', 'If you could be someone else, who would you choose to be?', 'What is your biggest fear?', 'What is your favorite musical band? What is your favorite album of theirs?', 'Do you have a special hobby?', 'What is your favorite topping for pizza?', 'What is your favorite hero?', 'What is your favorite character (from a movie or series)? Why?', 'What is your favorite color?', 'What holiday do you like most?', 'In which city / do you want to visit?', 'What do you like to do in your free time?', 'Which restaurant do you like best?', 'Where would you like to live to be big?'];
 let qWas = [];
-
 let pressesArr = [0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0];
 let turn = 0;
 
@@ -81,11 +88,11 @@ function gamePlay(qBut , presses)
    {
        checkTurn(qBut);
    }
-    qNum = Math.floor(Math.random() * 10);
+    qNum = Math.floor(Math.random() * 52);
     
     while(!checkWas(qNum , qWas))
     {
-        qNum = Math.floor(Math.random() * 10);
+        qNum = Math.floor(Math.random() * 52);
     }
     qWas[turn] = qNum;
     quPresent.innerText = qArr[qNum];
@@ -187,14 +194,14 @@ function isOver()
     updateBoard();
     if(checkRows() == true || checkCols() == true || checkDiags() == true || turn >= 9)
     {
+        quPresent.hidden = true;
+        titleQu.hidden = true;
         setTimeout(function()
         {
             table.hidden = true;
-            quPresent.hidden = true;
-            titleQu.hidden = true;
             gameOver.hidden = false;
             instructions.hidden = true;
-            continueB.hidden = false;
+            continueB.style.visibility = 'visible';
             hwoWon();
         } , 200);
     }
@@ -296,18 +303,23 @@ qBut9.addEventListener('click' , function()
 ///////////////////////////////////////////////////////////////////
 roboticsArticle.addEventListener('click' , function()
 {
-    // setTimeout(function()
-    // {
-    //     video.hidden = false;
-    // } , 120000)
-    video.hidden = false;
+    questions.hidden = false;
+    articleIMG.style.width = "100px";
+    articleIMG.style.height = "100px";
+    article.style.height = "100px";
+    article.style.width = "100px";
+    articleIMG.style.left = "30px";
+    article.style.left = "30px";
+    article.style.top = "200px"
 } , false);
 
 roboticsVideo.addEventListener('click' , function()
 {
-    // setTimeout(function()
-    // {
-    //     questions.hidden = false;
-    // } , 220000);
-    questions.hidden = false;
+    article.hidden = false;
+    videoIMG.style.width = "100px";
+    videoIMG.style.height = "100px";
+    video.style.width = "100px";
+    video.style.height = "100px";
+    video.style.left = "30px";
+    videoIMG.style.left = "30px";
 } , false);
