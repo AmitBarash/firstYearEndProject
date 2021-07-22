@@ -1,0 +1,239 @@
+<head>
+  <title>study a friend - World</title>
+  <link rel="stylesheet" href="styleMeret.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+</head>
+<body id ="body" style="background-image: url('https://i.natgeofe.com/n/9a43c69d-2417-4352-8689-3e268e844e1d/world-classic-2018-banner-clip-72_2x1.jpg');">
+
+<div class=bg>
+  
+  
+<div id="homegame">
+  <div id="hello">
+      <h1 id="welcome">welcome!</h1>
+      insert your names: 
+      <br><br>
+      <input id="name1" placeholder="insert the first name">
+      <input id="name2" placeholder="insert the second name">
+      <button id="submitButton">submit</button>
+      <br><br>
+      <div id="helloOutput" hidden>
+          hello
+          <span id="name1Output"></span>
+          and
+          <span id="name2Output"></span>
+          welcome to our site about robotics.
+          <br>you will also learn together and know each other well.
+          <br>good luck!
+      </div>
+      <br>
+      <button id="startButton" hidden>start</button>
+  </div>
+</div>
+
+  <!-- tic tac toe game -->
+  <div id="firstLevel" hidden>
+      <table id="table" rules="all">
+          <tr>
+              <td id="qBut1"></td>
+              <td id="qBut2"></td>
+              <td id="qBut3"></td>
+          </tr>
+          <tr>
+              <td id="qBut4"></td>
+              <td id="qBut5"></td>
+              <td id="qBut6"></td>
+          </tr>
+          <tr>
+              <td id="qBut7"></td>
+              <td id="qBut8"></td>
+              <td id="qBut9"></td>
+          </tr>
+      </table>
+
+      <div id="instructions">
+          in this step you will get to know each other by playing tic tac toe.
+          <br>
+
+          <ul id= 'instructionslist'>
+              <b>the rules:</b>
+              <li>each player choose a square to put his sign in it (X or O).</li>
+              <li>the X always begins.</li>
+              <li>there are three ways to win the game:</li>
+              <li>the first to put his / her sign along the whole row wins.</li>
+              <li>the first to put his / her sign along the whole column wins.</li>
+              <li>the first to put his / her sign along the whole diagonal wins.</li>
+              <li>if no one won and theboard is full then it is a tie.</li>
+          </ul>
+      </div>
+    
+      <button id="continue" hidden>continue to research</button>
+      <h2 id="gameOver" class="gameOver" hidden>game over</h2>
+      <h2 id="congX" class="gameOver" hidden>
+      player X has won!
+      </h2>
+      <h2 id="congO" class="gameOver" hidden>
+      player O has won!
+      </h2>
+      <h1 id="tie" class="gameOver" hidden>
+      no one has won, it is a tie.
+      </h1>
+      <br><br><br><br><br>
+      <div id="titleQu">the question:</div>
+      <br>
+      <div id="quPresent"></div>
+      <div id='gameOver'></div>
+      <h2 id="gameOver" class="gameOver" hidden>game over</h2>
+      <h2 id="congX" class="gameOver" hidden>
+      player X has won!
+      </h2>
+      <h2 id="congO" class="gameOver" hidden>
+      player O has won!
+      </h2>
+      <h2 id="tie" class="gameOver" hidden>
+      no one has won, it is a tie.
+      </h2>
+      <br><br>
+    </div>
+  </div>
+  <!-- end of tic tac toe game -->
+  <!-- start of researching -->
+  <div id="researching" hidden>
+    <div id="article">
+
+
+    
+<div class="w3-container w3-teal">
+  <h1>Click on the flags to learn about a country</h1>
+</div>
+
+<div class="w3-row-padding w3-margin-top">
+  <div class="w3-third">
+    <div class="w3-card">
+      <a href="https://www.youtube.com/watch?v=qSD97jdUsaQ" target="_blank"
+        title="click on me Ghana">
+      <img src="https://www.worldometers.info/img/flags/small/tn_gh-flag.gif"  style="width:50%">
+      <div class="w3-container">
+        <h5>Ghana</h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card">
+      <a href="https://www.youtube.com/watch?v=h_bBfrPAEfQ" target="_blank"
+        title="click on me brazil">
+      <img src="https://i.etsystatic.com/11075118/r/il/b806ae/1523713867/il_570xN.1523713867_lf42.jpg"  style="width: 50%">
+      <div class="w3-container">
+        <h5>brazil</h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card">
+      <a href="https://www.youtube.com/watch?v=zQlQWjr8VxA" target="_blank"
+        title="click on me india">
+      <img src="https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg"  style="width: 50%">
+      <div class="w3-container">
+        <h5>india</h5>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="w3-row-padding w3-margin-top">
+    <div class="w3-third">
+      <div class="w3-card">
+        <a href="https://www.youtube.com/watch?v=ZApQ_F_5oTk" target="_blank"
+          title="click on me Vietnam">
+        <img src="https://www.worldometers.info/img/flags/small/tn_vm-flag.gif"  style="width:50%">
+        <div class="w3-container">
+          <h5>Vietnam</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-third">
+      <div class="w3-card">
+        <a href="https://www.youtube.com/watch?v=xU2UoujQwU0" target="_blank"
+          title="click on me japan">
+        <img src="https://www.worldometers.info/img/flags/small/tn_ja-flag.gif"  style="width: 50%">
+        <div class="w3-container">
+          <h5>japan</h5>
+        </div>
+      </div>
+    </div>
+  
+    <div class="w3-third">
+      <div class="w3-card">
+        <a href="https://www.youtube.com/watch?v=bStQp3EvC9A" target="_blank"
+          title="click on me canada">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/1200px-Flag_of_Canada_%28Pantone%29.svg.png"  style="width: 50%">
+        <div class="w3-container">
+          <h5>canada</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="w3-row-padding w3-margin-top">
+      <div class="w3-third">
+        <div class="w3-card">
+          <a href="https://www.youtube.com/watch?v=VK2F9M3tLuA" target="_blank"
+            title="click on me Australia">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Australia_%28converted%29.svg/2560px-Flag_of_Australia_%28converted%29.svg.png"  style="width:50%">
+          <div class="w3-container">
+            <h5>Australia</h5>
+          </div>
+        </div>
+      </div>
+              
+      
+    <div class="w3-third">
+      <div class="w3-card">
+        <a href="https://www.youtube.com/watch?v=hK8KwiGOWb4" target="_blank"
+          title="click on me U.K.">
+        <img src="https://www.worldometers.info/img/flags/small/tn_uk-flag.gif"  style="width: 50%">
+        <div class="w3-container">
+          <h5>U.K.</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-third">
+      <div class="w3-card">
+        <a href="https://www.youtube.com/watch?v=orWL34vG3tY" target="_blank"
+          title="click on me U.K.">
+        <img src="https://www.worldometers.info/img/flags/small/tn_us-flag.gif"  style="width: 50%">
+        <div class="w3-container">
+          <h5>U.S.</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="questions" ></div>
+    click the button below to answer the questions about robotics ↓↓↓
+    <br><br>
+    <a id="quForm" href="https://docs.google.com/forms/d/e/1FAIpQLSe9E7FneKose3GIeZdB4gdT2QU-KNPEAzExFco6E2-1tOyJJQ/viewform?usp=sf_link" target="_blank">
+        <button id="quFormBut">to questions</button>
+    </a>
+    <br><br><br><br><br><br><br><br>
+</div>
+
+
+    
+              
+            </div>
+            
+          </a>
+          <br><br><br><br><br><br><br><br>
+      </div>
+      <br><br><br><br><br>
+  </div>
+</div>
+  <script src="appMeret.js"></script>
+</body>

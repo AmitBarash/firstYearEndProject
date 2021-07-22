@@ -48,6 +48,7 @@ html,body
     background-color: #2980b9;
     color: white;
     transform: rotateY(180deg);
+    text-align: center;
 }
 #robotics
 {
@@ -148,4 +149,10 @@ html,body
     font-size: 50px;
     color: white;
     top: -230px;
+}
+.cardsText
+{
+    position: absolute;
+    text-align: center;
+    top: 80px;
 }

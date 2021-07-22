@@ -1,0 +1,127 @@
+<head>
+    <title>study a friend - Sports </title>
+    <link rel="stylesheet" href="styleGil.css">
+</head>
+<body id="body">
+<div class="welcomeH">    
+<h1 id="welcome">Study a friend!!!</h1>
+    <hr id="welcomeline"></hr>
+</div>
+    
+<img id="welcomeImg" class="welcomeImg" src="https://st4.depositphotos.com/5383684/27560/v/1600/depositphotos_275601558-stock-illustration-children-and-friend-using-laptop.jpg">
+        <div class="p-1" id="firstP">
+        <p class="welcomeP">Hello and Welcome to our site !!<br>
+        In this site you will play and learn about the subject-Sport.<br>
+    but first of all before we begin please insert both of the players names. 
+</p>     </div>
+<div id="hello">
+        <p class="helloline-1">please insert your names:</p>
+        <br><br>
+        <input id="name1" placeholder="insert the first name">
+        <input id="name2" placeholder="insert the second name">
+        <button id="submitButton">submit</button>
+        <br><br>
+        <div id="helloOutput" hidden>
+            Hello
+            <span id="name1Output"></span>
+            and
+            <span id="name2Output"></span>
+            Welcome to our site about Sports.
+            <br>Now you will learnand play together and will know each other well.
+            <br>Good luck!
+            <br>Press start to play.
+        </div>
+        <br>
+    
+    </div>
+    <button id="startButton" class="btn btn-primary" hidden>start</button>
+
+    <!-- tic tac toe game -->
+    <div id="firstLevel" hidden>
+        <table id="table" rules="all">
+            <tr>
+                <td id="qBut1"></td>
+                <td id="qBut2"></td>
+                <td id="qBut3"></td>
+            </tr>
+            <tr>
+                <td id="qBut4"></td>
+                <td id="qBut5"></td>
+                <td id="qBut6"></td>
+            </tr>
+            <tr>
+                <td id="qBut7"></td>
+                <td id="qBut8"></td>
+                <td id="qBut9"></td>
+            </tr>
+        </table>
+        <div id="instructions">
+            in this step you will get to know each other by playing tic tac toe.
+            <br>
+            <ul>
+                <b>the rules:</b>
+                <li>each player choose a square to put his sign in it (X or O).</li>
+                <li>the X always begins.</li>
+                <li>there are three ways to win the game:</li>
+                <li>the first to put his / her sign along the whole row wins.</li>
+                <li>the first to put his / her sign along the whole column wins.</li>
+                <li>the first to put his / her sign along the whole diagonal wins.</li>
+                <li>if no one won and theboard is full then it is a tie.</li>
+            </ul>
+        </div>
+        <button id="continue" hidden>Continue to research</button>
+        <a href="indexGil.html"><button id="return" class="returnBut" hidden>Play again!</button></a>
+        <br><br><br><br><br>
+        <div id="titleQu">the question:</div>
+        <br>
+        <div id="quPresent"></div>
+        <h2 id="gameOver" class="gameOver" hidden>game over</h2>
+        <h2 id="congX" class="gameOver" hidden>
+         has won!
+        </h2>
+        <h2 id="congO" class="gameOver" hidden>
+         has won!
+        </h2>
+        <h2 id="tie" class="gameOver" hidden>
+        no one has won, it is a tie.
+        </h2>
+        <br><br>
+    </div> 
+    <!-- end of tic tac toe game -->
+    <!-- start of researching -->
+    <div id="researching" hidden>
+        <div id="video">
+            here is a short video about Sports facts.
+            <br>
+            watch the video below ↓↓↓ and after that roll down
+            <br><br>
+            <a  href="https://www.youtube.com/watch?v=DzNiaOxEWnA" target="_blank">
+                <img id="SportsVideo" src="https://previews.123rf.com/images/incomible/incomible1405/incomible140500027/28297754-sports-background-with-soccer-football-flat-icons-.jpg" alt="video" height="300px" width="300px" title="learn from a video">
+            </a>
+        </div> 
+        
+        <div id="article" hidden>
+            here is a short article to read about Sports-facts .<br>
+             to read the article you need to press the image below ↓↓↓ after reading the article roll down
+            <br>
+            <a  href="https://apsportseditors.org/others/sports-facts/" target="_blank">
+                <img id="SportsArticle" src="https://cdn11.bigcommerce.com/s-jdhnct1/images/stencil/original/products/227/740/splash_background_collection__12939.1446754374.jpg?c=2" height="250px" width="250px" title="article">
+
+            </a>
+        </div>
+       
+        <br><br><br><br>
+        <div id="questions" hidden>
+            click the button below to answer the questions about Sports ↓↓↓
+            <br><br>
+            <a id="quForm" href="https://docs.google.com/forms/d/e/1FAIpQLSd5kQLRie3Aex3UeC4M-p3iKn2zPSTbS44CBlRS_By64DCnRA/viewform?usp=sf_link" target="_blank">
+                <button id="quFormBut"  >To Questions</button>
+            </a>
+            <br><br><br><br><br><br><br><br>
+        </div>
+        <div id="endSite" hidden><p>Congratulations! You have finished the game.<br>
+        In order to play again reload the website:)</p></div>
+        <br><br><br><br><br>
+    </div>
+    <script src="appGil.js"></script>
+</body>
