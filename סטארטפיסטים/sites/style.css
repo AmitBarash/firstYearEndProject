@@ -1,0 +1,25 @@
+body
+{
+    background-image: url("background1.jpeg");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    height: 100vh;
+    overflow-y: hidden;
+    font-family: "Raleway", sans-serif;
+    font-weight: 200;
+    color: white;
+}
+#sepLine
+{
+    width: 20vw;
+}
+#content
+{
+    margin-top: 15%;
+    text-align: center;
+}
+#logo
+{
+    font-size: 3vh;
+}
