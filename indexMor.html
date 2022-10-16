@@ -1,0 +1,112 @@
+<head>
+    <title>study a friend - Astronomy</title>
+    <link rel="stylesheet" href="styleMor.css">
+</head>
+<body id="body" background="SPACE.jpg">
+    <div id="hello">
+        <h1 id="welcome">welcome</h1>
+        insert your names:
+        <br><br>
+        <input id="name1" placeholder="insert the first name">
+        <input id="name2" placeholder="insert the second name">
+        <button id="submitButton">submit</button>
+        <br><br>
+        <div id="helloOutput" hidden>
+            hello
+            <span id="name1Output"></span>
+            and
+            <span id="name2Output"></span>
+            welcome to our site about Astronomy.
+            <br>you will also learn together and know each other well.
+            <br>good luck!
+        </div>
+        <br>
+        <button id="startButton" hidden>start</button>
+    </div>
+
+    <!-- tic tac toe game -->
+    <div id="firstLevel" hidden>
+        <table id="table" rules="all">
+            <tr>
+                <td id="qBut1"></td>
+                <td id="qBut2"></td>
+                <td id="qBut3"></td>
+            </tr>
+            <tr>
+                <td id="qBut4"></td>
+                <td id="qBut5"></td>
+                <td id="qBut6"></td>
+            </tr>
+            <tr>
+                <td id="qBut7"></td>
+                <td id="qBut8"></td>
+                <td id="qBut9"></td>
+            </tr>
+        </table>
+        <div id="instructions">
+            in this step you will get to know each other by playing tic tac toe.
+            <br>
+            <ul>
+                <b>the rules:</b>
+                <li>each player choose a square to put his sign in it (X or O).</li>
+                <li>the X always begins.</li>
+                <li>there are three ways to win the game:</li>
+                <li>the first to put his / her sign along the whole row wins.</li>
+                <li>the first to put his / her sign along the whole column wins.</li>
+                <li>the first to put his / her sign along the whole diagonal wins.</li>
+                <li>if no one won and theboard is full then it is a tie.</li>
+            </ul>
+        </div>
+        <button id="continue" hidden>continue to research</button>
+        <h2 id="gameOver" class="gameOver" hidden>game over</h2>
+        <h2 id="congX" class="gameOver" hidden>
+        player X has won!
+        </h2>
+        <h2 id="congO" class="gameOver" hidden>
+        player O has won!
+        </h2>
+        <h1 id="tie" class="gameOver" hidden>
+        no one has won, it is a tie.
+        </h1>
+        <br><br><br><br><br>
+        <div id="titleQu">the question:</div>
+        <br>
+        <div id="quPresent"></div>
+        <br><br>
+    </div>
+    <!-- end of tic tac toe game -->
+    <!-- start of researching -->
+    <div id="researching" hidden>
+    
+        <br><br><br><br>
+        <div id="video" >
+            Here is a video that teaches the secrets of the universe, space and the solar system, click on the image to get to the video!
+            Fun viewing 😁😊
+            <br>
+           
+            <br><br>
+            <a id="AstronomyVideo" href="https://youtu.be/yMTAorYOBIg" target="_blank">
+                <img id = "spacev" src="https://i.ytimg.com/vi/yMTAorYOBIg/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCHkO5BC4L5rFWxMoynpkBv8oNhdA" alt="video" height="450" width="700" title="learn from a video">
+            </a>
+        </div>
+        <div id="article" hidden >
+            Click on the image to play the game on our solar system ↓ ↓ ↓
+            
+            <br>
+            <a id="AstronomyArticle" href="https://lo.cet.ac.il/player/?document=926ea6df-20a3-4457-9b5f-882263b39d44&language=he&sitekey=ebag#pageId=page_1&documentId=926ea6df-20a3-4457-9b5f-882263b39d44" target="_blank">
+                <img id="spaceg" src="https://img.mako.co.il/2021/02/11/cigdem_shutterstock_208846012_autoOrient_i.jpg" height="450" width="700" title="article">
+            </a>
+        </div>
+        <div id="questions" hidden>
+            click the button below to answer the questions about Astronomy ↓↓↓
+            <br><br>
+            <a id="quForm" href="https://docs.google.com/forms/d/e/1FAIpQLSfYqNhOQfZVPj8y6yhtIV4i_St9Kjsm-XCzjhH8kcBRioHGpg/viewform?usp=sf_link" target="_blank">
+                <button id="quFormBut">to questions</button>
+            </a>
+            <br><br><br><br><br><br><br><br>
+        </div>
+        <br><br><br><br><br>
+    </div>
+    <script src="appMor.js"></script>
+
+</body>

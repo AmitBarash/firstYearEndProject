@@ -1,0 +1,155 @@
+html,body
+{
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+}
+/* hello CSS */
+#hello
+{
+    position: relative;
+    left: 550px;
+    top: 200px;
+    /* visibility: hidden; */
+}
+#welcome
+{
+    position: relative;
+    left: 100px;
+    top: -100px;
+    font-size: 50px;
+}
+/* end of hello CSS */
+#firstLevel
+{
+    width: 1000px;
+    height: 500px;
+    position: relative;
+    left: 200px;
+    /* visibility: hidden; */
+}
+/* tic tac toe game CSS */
+#cong
+{
+    top: -50px;
+    position: relative;
+    left: 100px;
+}
+#continue
+{
+    top: 500px;
+    position: absolute;
+    left: 475px;
+}
+#ticTacToeGame
+{
+    width: 300px;
+    position: relative;
+    top: 100px;
+    left: 550px;
+}
+td
+{
+    width: 100px;
+    height: 100px;
+    font-size: 100px;
+    text-align: center;
+    line-height: 0px;
+}
+td:hover
+{
+    background-color: white;
+}
+#quPresent
+{
+    font-size: 30px;
+    position: relative;
+    top: -60px;
+}
+#titleQu
+{
+    font-size: 30px;
+    position: relative;
+    top: -60px;
+
+}
+.gameOver
+{
+    text-align: center;
+    position: relative;
+    top: 270px;
+    left: 50px;
+}
+#table
+{
+    position: relative;
+    top: 100px;
+    left: 600px;
+}
+#instructions
+{
+    position: relative;
+    top: -150px;
+    left: 100px;
+    width: 419px;
+    height: 150px;
+    background-color: rgb(255, 255, 255);
+}
+/* end of tic tac toe CSS */
+/* researching CSS */
+#video
+{
+    position: relative;
+    top: 20px;
+    left: center;
+    text-align: center;
+    height: 600px;
+}
+#body
+{
+    overflow: hidden;
+}
+#article
+{
+    position: relative;
+    text-align: center;
+    top: 20px;
+}
+#questions
+{
+    position: relative;
+    top: 100px;
+    text-align: center;
+}
+.w3-card
+{
+    background-color:rgb(43, 43, 255);
+}
+#homepage
+{
+    background-color: white;
+}
+#instructionslist
+{
+   background-color:  rgb(0, 0, 0);
+    color: white;
+}
+h1 , h2 , h3 , h4 ,h5
+{
+    color: black;
+}
+#hello
+{
+    background-color: rgba(30, 143, 255, 0.699);
+    width: 32%;
+    height: 40%;
+}
+#gameOver
+{
+    background-color: blue;
+}
+#quFormBut{
+    height: 25%;
+    width: 50%
+    ;
+}

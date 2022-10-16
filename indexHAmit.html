@@ -1,0 +1,131 @@
+<html>
+    <head>
+        <title> study a friend - רובוטיקה</title>
+        <link rel="stylesheet" href="styleHAmit.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body id="body" background="robotsBackground.jpg">
+        <div id="hello">
+            <div id="changeLang">
+                change language ↓ לשנות שפה
+                <br>
+                <a id="englishDoc" href="indexEAmit.html">
+                    <button id="langBut">English</button>
+                </a>
+            </div>
+            <div id="helloText">
+                <h1 id="welcome">ברוכים הבאים!</h1>
+                <span id="insert">הכניסו את שמותיכם:</span>
+                <br><br>
+                <input id="name1" placeholder="הכנס/י שם ראשון">
+                <input id="name2" placeholder="הכנס/י שם שני">
+                <button id="submitButton" class="btn btn-info">אישור</button>
+                <br><br>
+                <div id="helloOutput" hidden>
+                    שלום <span id="name1Output"></span> ו<span id="name2Output"></span>, 
+                    ברוכים הבאים לאתר על רובוטיקה
+                    <br>אתם תלמדו ביחד ותכירו זה את זה
+                    <br>בהצלחה!
+                </div>
+                <br>
+                <button id="startButton" class="btn btn-info">התחל</button>
+            </div>
+        </div>
+
+        <!-- tic tac toe game -->
+        <div id="firstLevel" hidden>
+            <div id="ticTacToeText">
+                <table id="table" rules="all">
+                    <tr>
+                        <td id="qBut1"></td>
+                        <td id="qBut2"></td>
+                        <td id="qBut3"></td>
+                    </tr>
+                    <tr>
+                        <td id="qBut4"></td>
+                        <td id="qBut5"></td>
+                        <td id="qBut6"></td>
+                    </tr>
+                    <tr>
+                        <td id="qBut7"></td>
+                        <td id="qBut8"></td>
+                        <td id="qBut9"></td>
+                    </tr>
+                </table>
+                <div id="instructions">
+                    בשלב הזה אתם תכירו אחד את השני באמצעות משחק איקס עיגול. אחרי כל מהלך תצטרכו לענות על שאלה לגביכם כדי להכיר אחד את השני
+                    <br>
+                    <ul>
+                        <b>החוקים:</b>
+                        <li>כל שחקן בוחר ריבוע לשים בו את הסימן שלו (X או O)</li>
+                        <li>X תמיד מתחיל</li>
+                        <li>יש שלוש דרכים לנצח במשחק:</li>
+                        <li>הראשון/ראשונה לשים את הסימן שלו/שלה לאורך טור שלם מנצח/ת.</li>
+                        <li>הראשון/ראשונה לשים את הסימן שלו/שלה לאורך שורה שלמה מנצח/ת.</li>
+                        <li>הראשון/ראשונה לשים את הסימן שלו/שלה לאורך אלכסון שלם מנצח/ת.</li>
+                        <li>אם אף אחד/אחת לא ניצח/ה והלוח מלא אז התוצאה היא תיקו.</li>
+                    </ul>
+                </div>
+                <button id="continue" class="btn btn-info">להמשיך למחקר</button>
+                <h2 id="gameOver" class="gameOver" hidden>המשחק נגמר</h2>
+                <h2 id="congX" class="gameOver" hidden>
+                X ניצח/ה!
+                </h2>
+                <h2 id="congO" class="gameOver" hidden>
+                O ניצח/ה!
+                </h2>
+                <h1 id="tie" class="gameOver" hidden>
+                אף אחד/אחת לא ניצח/ה, זה תיקו.
+                </h1>
+            </div>
+            <br><br><br><br><br>
+            <div id="titleQu"><b>השאלה:</b></div>
+            <br>
+            <div id="quPresent"></div>
+            <br><br>
+        </div>
+        <!-- end of tic tac toe game -->
+        <!-- start of researching -->
+        <div id="researching" hidden>
+            <div id="video">
+                צפו בסרטון למטה על ידי לחיצה על התמונה ↓↓↓
+                <br>
+                <a id="roboticsVideo" href="https://youtu.be/JPxTl-79b5I" target="_blank">
+                    <img id="videoIMG" src="https://i.ytimg.com/vi/JPxTl-79b5I/maxresdefault.jpg" alt="video" height="381" width="680" title="learn from a video">
+                </a>
+            </div>
+            <br><br><br><br>
+            <div id="article" hidden>
+                קראו את הקטע למטה על ידי לחיצה על התמונה ↓↓↓
+                <br>
+                <a id="roboticsArticle" href="https://education.lego.com/en-us/lessons/advancing-with-spm/gear#connect" target="_blank">
+                    <img id="articleIMG" src="https://static-assets.imageservice.cloud/6121350/gear-simple-and-powered-machines-lesson-plans.jpg" alt="article" height="350" width="400" title="article">
+                </a>
+            </div>
+            <div id="questions" hidden>
+                לחצו על הכפתור למטה על מנת לענות על שאלות בנושא רובוטיקה ↓↓↓
+                <br><br>
+                <a id="quForm" href="https://docs.google.com/forms/d/e/1FAIpQLScLvWvIy26B988G39KjUUyjKou4GyetU4ho05w30b9QnuF4SQ/viewform?usp=sf_link" target="_blank">
+                    <button id="quFormBut" class="btn btn-info">לשאלות</button>
+                </a>
+                <br><br><br><br><br><br><br><br>
+            </div>
+            <h1 id="finish" hidden>
+                מזל טוב! סיימתם את תהליך הלמידה
+                <br>
+                אתם יכולים לצאת מהדף עכשיו או לחזור לדף הבית וללמוד עוד
+                <br><br>
+                <a href="indexMain.html">
+                    <button id="backToHome" class="btn btn-info">חזרה לדף הבית</button>
+                </a>
+            </h1>
+            <br><br><br><br><br>
+            <br><br><br><br><br>
+        </div>
+        <script src="appHAmit.js"></script>
+    </body>
+</html>

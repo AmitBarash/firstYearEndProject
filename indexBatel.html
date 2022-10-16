@@ -1,0 +1,129 @@
+<head>
+    <title>study a friend - mythology</title>
+    <link rel="stylesheet" href="styleBatel.css">
+</head>
+    <body id ="body" style="background-image: url('https://64.media.tumblr.com/6ea8a2ec9aec853d84d0043982e5ccc7/f24004c2aa123d3e-fd/s2048x3072/86803e788c1a496b8f4bb79ccc79370685953e35.jpg');">
+
+    <!-- <div id="background">
+        <img id="middle" src="https://www.intelrealsense.com/wp-content/uploads/2020/04/header_robotic_automation-1024x576.jpg" height="200px" width="200px">
+    </div> -->
+    <div id="hello">
+        <h1 id="welcome">welcome!</h1>
+        insert your names:
+        <br><br>
+        <input id="name1" placeholder="insert the first name">
+        <input id="name2" placeholder="insert the second name">
+        <button id="submitButton">submit</button>
+        <br><br>
+        <div id="helloOutput" hidden>
+            hello
+            <span id="name1Output"></span>
+            and
+            <span id="name2Output"></span>
+            welcome to our site about robotics.
+            <br>you will also learn together and know each other well.
+            <br>good luck!
+        </div>
+        <br>
+        <button id="startButton" hidden>start</button>
+    </div>
+
+    <!-- tic tac toe game -->
+    <div id="firstLevel" hidden>
+        <table id="table" rules="all">
+            <tr>
+                <td id="qBut1"></td>
+                <td id="qBut2"></td>
+                <td id="qBut3"></td>
+            </tr>
+            <tr>
+                <td id="qBut4"></td>
+                <td id="qBut5"></td>
+                <td id="qBut6"></td>
+            </tr>
+            <tr>
+                <td id="qBut7"></td>
+                <td id="qBut8"></td>
+                <td id="qBut9"></td>
+            </tr>
+        </table>
+        <div id="instructions">
+            in this step you will get to know each other by playing tic tac toe.
+            <br>
+            <ul>
+                <b>the rules:</b>
+                <li>each player choose a square to put his sign in it (X or O).</li>
+                <li>the X always begins.</li>
+                <li>there are three ways to win the game:</li>
+                <li>the first to put his / her sign along the whole row wins.</li>
+                <li>the first to put his / her sign along the whole column wins.</li>
+                <li>the first to put his / her sign along the whole diagonal wins.</li>
+                <li>if no one won and theboard is full then it is a tie.</li>
+            </ul>
+        </div>
+        <button id="continue" hidden>continue to research</button>
+        <h2 id="gameOver" class="gameOver" hidden>game over</h2>
+        <h2 id="congX" class="gameOver" hidden>
+        player X has won!
+        </h2>
+        <h2 id="congO" class="gameOver" hidden>
+        player O has won!
+        </h2>
+        <h1 id="tie" class="gameOver" hidden>
+        no one has won, it is a tie.
+        </h1>
+        <br><br><br><br><br>
+        <div id="titleQu">the question:</div>
+        <br> 
+        <div id="quPresent"></div>
+        <h2 id="gameOver" class="gameOver" hidden>game over</h2>
+        <h2 id="congX" class="gameOver" hidden>
+        player X has won!
+        </h2>
+        <h2 id="congO" class="gameOver" hidden>
+        player O has won!
+        </h2>
+        <h2 id="tie" class="gameOver" hidden>
+        no one has won, it is a tie.
+        </h2>
+        <br><br>
+    </div>
+    <!-- end of tic tac toe game -->
+    <!-- start of researching -->
+    <div id="researching" hidden>
+        <div id="Hera">
+            here is a short article to read about Hera. to read the article you need to press the image below ↓↓↓ after reading the article roll down
+            <br>
+            <a href="https://he.wikipedia.org/wiki/%D7%94%D7%A8%D7%94" target="_blank">
+                <img id="HeraImg" src="https://a7.org/pictures/965/965488.jpg" height="450" width="500" title="read about Medusa">
+            </a>
+        </div>
+        <br><br><br><br> 
+        <div id="Hades" hidden>
+            here is a short article to read about Hades. to read the article you need to press the image below ↓↓↓ after reading the article roll down
+            <br>
+            <a href="https://he.wikipedia.org/wiki/%D7%90%D7%A8%D7%A1_(%D7%9E%D7%99%D7%AA%D7%95%D7%9C%D7%95%D7%92%D7%99%D7%94)" target="_blank">
+                <img id="HadesImg" src="https://upload.wikimedia.org/wikipedia/commons/1/12/Benny_Gantz_2021.jpg" height="450" width="500" title="read about Medusa">
+            </a>
+        </div>
+        <br><br><br><br> 
+        <div id="Zeus" hidden>
+            here is a short article to read about Zeus. to read the article you need to press the image below ↓↓↓ after reading the article roll down
+            <br>
+            <a href="https://en.wikipedia.org/wiki/Zeus" target="_blank">
+                <img id="ZeusImg" src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Benjamin_Netanyahu_2019_%28cropped%29.jpg" height="450" width="500" title="read about Medusa">
+            </a>
+        </div>
+        <div id="questions" hidden>
+            click the button below to answer the questions about greek mythology ↓↓↓
+            <br><br>
+            <a id="quForm" href="https://docs.google.com/forms/d/e/1FAIpQLScmVKCljespxG_xSXKp6qTfHzOlSngg8jQzWNRJTKx5p4yEzQ/viewform?usp=sf_link" target="_blank">
+                <button id="quFormBut">to questions</button>
+            </a>
+            <br><br><br><br><br><br><br><br>
+        </div>
+
+        <br><br><br><br><br>
+    </div>
+    <script src="appBatel.js"></script>
+</body>

@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    height: 650px;
+}
+html,body
+{
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+    direction: rtl;
+}
+.flip-card {
+    background-color: transparent;
+    width: 250px;
+    height: 250px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+.flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+    text-align: center;
+}
+#robotics
+{
+    position: relative;
+    left: -1100px;
+    top: 50px;
+}
+#animals
+{
+    position: relative;
+    left: -800px;
+    top: -200px;
+}
+#gaming
+{
+    position: relative;
+    left: -500px;
+    top: -450px;
+}
+#sports
+{
+    position: relative;
+    top: -700px;
+    left: -200px;
+}
+#greekMythologys
+{
+    position: relative;
+    top: -650px;
+    left: -1100px;
+}
+#countries
+{
+    position: relative;
+    top: -900px;
+    left: -800px;
+}
+#stars
+{
+    position: relative;
+    top: -1150px;
+    left: -500px;
+}
+#israelCountry
+{
+    position: relative;
+    top: -1400px;
+    left: -200px;
+}
+#title
+{
+    text-align: center;
+    position: relative;
+    top: 25px;
+    background-color: rgb(255, 210, 231);
+    width: 250px;
+    left: -650px;
+}
+
+#robotTitle
+{
+    position: relative;
+    top: -170px;
+    font-size: 50px;
+    color: salmon;
+}
+#animalTitle
+{
+    position: relative;
+    top: -70px;
+    font-size: 50px;
+    color: salmon;
+}
+#gamingTitle
+{
+    position: relative;
+    top: -100px;
+    font-size: 40px;
+    color: white;
+}
+#greekMythologysTitle
+{
+    position: relative;
+    font-size: 40px;
+    color: rgb(71, 211, 157);
+    top: -120px;  
+}
+#countriesTitle
+{
+    position: relative;
+    font-size: 50px;
+    color: salmon;
+    top: -120px;
+}
+#starsTitle
+{
+    position: relative;
+    font-size: 50px;
+    color: white;
+    top: -230px;
+}
+.cardsText
+{
+    position: absolute;
+    text-align: center;
+    top: 80px;
+}

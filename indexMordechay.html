@@ -1,0 +1,108 @@
+<head>
+    <title>study a friend - israel</title>
+    <link rel="stylesheet" href="styleMordechay.css">
+</head>
+<body id="body">
+    <div id="hello">
+        <h1 id="welcome">welcome!</h1>
+        <h2>insert your names:</h2>
+        <br><br>
+        <input id="name1" placeholder="insert the first name">
+        <input id="name2" placeholder="insert the second name">
+        <button id="submitButton">submit</button>
+        <br><br>
+        <div id="helloOutput" hidden>
+            <h3>hello
+            <span id="name1Output"></span>
+            and
+            <span id="name2Output"></span>
+            welcome to our site about israel.
+            <br>you will also learn together and know each other well.
+            <br>good luck!</h3>
+        </div>
+        <br>
+        <button id="startButton" hidden>start</button>
+    </div>
+
+    <!-- tic tac toe game -->
+    <div id="firstLevel" hidden>
+        <table id="table" rules="all">
+            <tr>
+                <td id="qBut1"></td>
+                <td id="qBut2"></td>
+                <td id="qBut3"></td>
+            </tr>
+            <tr>
+                <td id="qBut4"></td>
+                <td id="qBut5"></td>
+                <td id="qBut6"></td>
+            </tr>
+            <tr>
+                <td id="qBut7"></td>
+                <td id="qBut8"></td>
+                <td id="qBut9"></td>
+            </tr>
+        </table>
+        <div id="instructions">
+            <h2>the Purpose of the game:</h2><p>The goal of each player is to create three symbols (X or o) that are on one line, one column or one diagonal.</p><h3>Game Instructions:</h3><p>Two players, each player chooses a sign, an X or a circle (usually an X starts the game). The first player places his mark somewhere on the board. In one row, one column or one diagonal and thus he won or until the whole board is filled and none of the players was able to create a sequence, in which case the result of the game is a .draw</p>
+        </div>
+        <button id="continue" hidden>continue to research</button>
+        <h2 id="gameOver" class="gameOver" hidden>game over</h2>
+        <h2 id="congX" class="gameOver" hidden>
+        player X has won!
+        </h2>
+        <h2 id="congO" class="gameOver" hidden>
+        player O has won!
+        </h2>
+        <h1 id="tie" class="gameOver" hidden>
+        no one has won, it is a tie.
+        </h1>
+        <br><br><br><br><br>
+        <div id="titleQu">the question:</div>
+        <br>
+        <div id="quPresent"></div>
+        <h2 id="gameOver" class="gameOver" hidden>game over</h2>
+        <h2 id="congX" class="gameOver" hidden>
+        player X has won!
+        </h2>
+        <h2 id="congO" class="gameOver" hidden>
+        player O has won!
+        </h2>
+        <h2 id="tie" class="gameOver" hidden>
+        no one has won, it is a tie.
+        </h2>
+        <br><br>
+    </div>
+    <!-- end of tic tac toe game -->
+    <!-- start of researching -->
+    <div id="researching" hidden>
+        <div id="article">
+            <p>here is a short video about general knowledge of the state of israel.
+            <br>
+            watch the video below ↓↓↓ and after that roll down</p>
+            <br><br>
+           
+            <br>
+            <a id="roboticsArticle" href="https://youtu.be/Pa4ytq3IfhA" target="_blank">
+                <img src="https://www.srugim.co.il/i/wp-content/uploads/2018/03/shutterstock_1037901493__w650h331q80.jpg" height="400" width="439" title="article">
+            </a>
+        </div>
+        <br><br><br><br>
+        <div id="video" hidden>
+            <p id = "pargrape">here is a short article to read about (subject). to read the article you need to press the image below ↓↓↓ after reading the article roll down</p>
+            <a id="roboticsVideo" href="https://israel.com/he/home/culture/history/history-timeline/" target="_blank">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS2zcEbi4WzraMswneHRED2U0oCTd-ozMLjQ&usqp=CAU" alt="video" height="400" width="439" title="learn from a video">
+            </a>
+        </div>
+        <div id="questions" hidden>
+            <p>click the button below to answer the questions about israel ↓↓↓</p>
+            <br><br>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSffbDmFOSOH02LGXLJbyZLqanQzpRO35xVDaxe_5C8f-N4bBA/viewform?usp=sf_link" target="_blank">
+                <button>to question</button>
+            </a>
+            <br><br><br><br><br><br><br><br>
+        </div>
+        <br><br><br><br><br>
+    </div>
+    <script src="appMordechay.js"></script>
+</body>
